@@ -173,8 +173,9 @@ function decideWinner() {
 
 function placeBet() {
     if (betsAllowed) {
-        let amount = document.getElementById("amountInput").value;
-        let betAmount = parseInt(amount);
+        let amount = document.getElementById("amountInput");
+        let betAmount = parseInt(amount.value);
+        amount.value = "";
 
         if (betAmount+bet > player.chips) {
             betEl.textContent = "Your Bet: $" + bet + " (Insufficient Chips!)";
