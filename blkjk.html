@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="blkjk.css">
+	<title>BlackJack</title>
+</head>
+<body>
+	<h1>BlackJack</h1>
+	<p id="message-el">Want to play a round?</p>
+	<p id="cards-el">Cards:</p>
+	<p id="sum-el">Sum:</p>
+	<p id="dealer-el">Dealer:</p>
+	<p id="dealersum-el">Dealer's Sum:</p>
+	<button id="start-el" onclick="startGame()">START GAME</button>
+	<button onclick="newCard()">NEW CARD</button>
+	<button onclick="stay()">STAY</button>
+	<p id="player-el"></p>
+	<p id="bet-el">Your Bet:</p>
+	<input type="number" id="amountInput" min="1" placeholder="Enter Bet" />
+	<button onclick="placeBet()">Submit</button>
+	<script src="blkjk.js"></script>
+</body>
+</html>
